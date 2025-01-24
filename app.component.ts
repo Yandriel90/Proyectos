@@ -10,18 +10,18 @@ import { RouterOutlet } from '@angular/router';
 
 export class AppComponent {
   title = 'Mannol';
-  nombre = 'Yandriel Padrón';
-  edad = 34;
+  name = 'Yandriel Padrón';
+  age = 34;
   email = 'yandriel900724@gmail.com';
-  sueldos = [1700, 1600, 1900];
-  activo = true;
-  sitio = 'http://www.google.com';
+  salaries = [1700, 1600, 1900];
+  active = true;
+  site = 'http://www.google.com';
 
-  esActivo() {
-    return this.activo ? 'Trabajador Activo' : 'Trabajador Inactivo';
+  isActive() {
+    return this.active ? 'Active worker' : 'Inactive worker';
   }
 
-  ultimos3Sueldos() {
-    return this.sueldos.reduce((suma, sueldo) => suma + sueldo, 0);
+  3lastSalaries() {
+    return this.salaries.reduce((add, salaries) => add + salaries, 0);
   }
 }
